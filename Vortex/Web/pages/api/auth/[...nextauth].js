@@ -4,7 +4,7 @@ import NextAuth from 'next-auth';
 import Providers from 'next-auth/providers';
 
 const options = {
-  site: process.env.SITE || 'http://localhost:3000',
+  site: process.env.SITE,
 
   // Configure one or more authentication providers
   providers: [
@@ -23,7 +23,7 @@ const options = {
       accessTokenUrl: 'https://discord.com/api/oauth2/token',
       authorizationUrl: 'https://discord.com/api/oauth2/authorize?response_type=code&prompt=none',
       profileUrl: 'https://discord.com/api/users/@me',
-      clientId: process.env.DISCORD_CLIENT_ID,
+      clientId: 932108040000397313,
       clientSecret: process.env.DISCORD_CLIENT_SECRET,
       profile: (profile) => {
         if (profile.avatar === null) {
