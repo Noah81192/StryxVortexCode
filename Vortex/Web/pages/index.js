@@ -37,7 +37,7 @@ export default function Home(props) {
         description="Vortex HQ is a Discord Bot company that specializes in Roblox communications."
       />
       <Container className="hero"> 
-        <h1>Welcome to <span className="hero vortex-gradient">Vortex</span></h1>
+        <h1>Welcome to <span className="hero vortex-gradient">Vortex HQ</span></h1>
         <h2>We're reimagining Discord Bot Services for the Roblox community.</h2>
         <Link href="/dashboard" passHref>
           <Button size="lg">Create a Bot!</Button>
